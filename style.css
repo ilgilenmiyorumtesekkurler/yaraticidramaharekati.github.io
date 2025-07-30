@@ -1,0 +1,307 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8e3; /* Pastel açık sarı */
+    color: #4a4a4a; /* Koyu gri metin */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #8c7851; /* Pastel kahverengi tonu */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #a39371; /* Pastel yeşilimsi kahverengi */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6d6144; /* Daha koyu ton */
+}
+
+/* Header */
+header {
+    background-color: #f7e7a5; /* Pastel sarı */
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #e0d080 3px solid;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #8c7851;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: #8c7851;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #5a4b32;
+}
+
+/* Hero Section */
+.hero-section {
+    background: #f7e7a5 url('https://via.placeholder.com/1500x600/fcf8e3/8c7851?text=Yaratıcı+Drama+Hareketi') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #8c7851;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 -50px 50px -50px rgba(0,0,0,0.1); /* Gölge efekti */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(252, 248, 227, 0.7); /* Hafif şeffaf pastel sarı katman */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #8c7851;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #6d6144;
+}
+
+.button {
+    display: inline-block;
+    background: #a39371; /* Pastel yeşilimsi kahverengi */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #6d6144;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+    background-color: #fdfae7; /* Daha açık pastel sarı */
+    border-bottom: 1px solid #eee;
+}
+
+section:nth-of-type(odd) {
+    background-color: #fcf8e3; /* Hafif farklı arka plan */
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #a39371;
+    border-radius: 2px;
+}
+
+/* About Section */
+.about-section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+    color: #5a4b32;
+}
+
+/* Education Section */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.education-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    border: 1px solid #f0e6c3;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+}
+
+.education-item h3 {
+    color: #a39371;
+    margin-top: 0;
+    text-align: left;
+    border-bottom: 1px solid #e0d080;
+    padding-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 0.95em;
+    color: #6d6144;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Video Section */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.video-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+    border: 1px solid #f0e6c3;
+}
+
+.video-item h3 {
+    color: #a39371;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 oranı */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Contact Section */
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-section li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #5a4b32;
+}
+
+.contact-section li a {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #a39371; /* Pastel yeşilimsi kahverengi */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    box-shadow: inset 0 50px 50px -50px rgba(0,0,0,0.1);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1, header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul {
+        padding-top: 10px;
+    }
+
+    header li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .hero-section h2 {
+        font-size: 2em;
+    }
+
+    .education-grid, .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
